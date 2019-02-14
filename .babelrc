@@ -1,0 +1,33 @@
+{
+  "presets": [
+    [
+      "@babel/preset-typescript",
+      {
+        "isTSX": true,
+        "allExtensions": true
+      }
+    ],
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "babel-plugin-dotenv",
+      {
+        "replacedModuleName": "babel-dotenv"
+      }
+    ],
+    "emotion",
+    "transform-class-properties"
+  ]
+}
